@@ -1,56 +1,62 @@
 import inquirer from "inquirer";
 import fs from "fs/promises";
 
-const {Description, Contents, Installation, Usage, License, Contributing, Tests, Questions} =
+const {Title, Description, Contents, Installation, Usage, License, Contributing, Tests, Questions} =
  await inquirer
  .prompt([
     {
+        name:'Title',
+        message: "Project title:",
+        type: 'input',
+        // default(){return '';},
+    },
+    {
         name:'Description',
         message: "Description of project:",
-        type: '',
-        default(){return '';},
+        type: 'input',
+        // default(){return '';},
     },
     {
         name:'Table of contents',
         message: "Do you require a table of contents?",
-        type: 'input',
-        default(){return '';},
+        type: 'confirm',
+        
     },
     {
         name:'Installation',
         message: "?",
         type: 'input',
-        default(){return '';},
+        // default(){return '';},
     },
     {
         name:'Usage',
         message: ":",
         type: 'input',
-        default(){return '';},
+        // default(){return '';},
     },
     {
         name:'License',
         message: "?",
         type: 'input',
-        default(){return '';},
+        // default(){return '';},
     },
     {
         name:'Contributing',
         message: "?",
         type: 'input',
-        default(){return '';},
+        // default(){return '';},
     },
     {
         name:'Tests',
         message: "?",
         type: 'input',
-        default(){return '';},
+        // default(){return '';},
     },
     {
         name:'Questions',
         message: "?",
         type: 'input',
-        default(){return '';},
+        // default(){return '';},
     },
 ])
 
@@ -61,3 +67,17 @@ let readmeText = `
 `
 
 fs.writeFile("README.md",readmeText);
+
+//functions for license option and contents option
+
+function generateLicense(License) {
+    if(License === ""){
+
+    }
+}
+
+function generateContents(Contents) {
+    if(Contents === "Yes"){
+
+    }
+}
