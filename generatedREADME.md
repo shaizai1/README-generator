@@ -1,5 +1,5 @@
 
-# README Generator 📋
+# Project README
 ## Description
 Insert description here:
 

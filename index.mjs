@@ -9,7 +9,7 @@ const {Title, Description, Contents, Installation, Usage, License, Contributing,
         name:'Title',
         message: "Project title:",
         type: 'input',
-        default(){return 'Project1';},
+        default(){return 'Project README';},
     },
     {
         name:'Description',
@@ -67,7 +67,7 @@ ${Description}
 
 `
 
-fs.writeFile("README.md",readmeText);
+fs.writeFile("generatedREADME.md",readmeText);
 
 //functions for license option and contents option
 
