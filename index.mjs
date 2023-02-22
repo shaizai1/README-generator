@@ -68,21 +68,27 @@ ${Description}
 ${Contents}
 
 ## Installation
+${Installation}
 
 ## Usage
+${Usage}
 
 ## License
+${License}
 
 ## Contributing
+${Contributing}
 
 ## Tests
+${Tests}
 
 ## Questions
+${Questions}
 
 
 `
 
-fs.writeFile("README.md",readmeText);
+fs.writeFile("generatedREADME.md",readmeText);
 
 //functions for license option and contents option
 
