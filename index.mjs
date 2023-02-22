@@ -65,9 +65,24 @@ let readmeText = `
 ## Description
 ${Description}
 
+${Contents}
+
+## Installation
+
+## Usage
+
+## License
+
+## Contributing
+
+## Tests
+
+## Questions
+
+
 `
 
-fs.writeFile("generatedREADME.md",readmeText);
+fs.writeFile("README.md",readmeText);
 
 //functions for license option and contents option
 
